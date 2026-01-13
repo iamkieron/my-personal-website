@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STAYFIT | Share Your Goal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="logo">
+        <svg width="26" height="16" viewBox="0 0 26 16" aria-hidden="true" style="vertical-align:middle; margin-right:6px;">
+          <path fill="#0b5cff" d="M6 0h2v4H6zM18 0h2v4h-2zM0 6h4v4H0zM22 6h4v4h-4zM6 12h2v4H6zM18 12h2v4h-2zM4 4h18v2H4zM4 10h18v2H4z"/>
+        </svg>
+        STAY<span>FIT</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="workouts.html">Workouts</a>
+        <a href="nutrition.html">Nutrition</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <div class="tagline">Tell us your focus</div>
+        <h1>Share your fitness goal.</h1>
+        <p class="muted">Let us know what you’re working toward so we can keep adding tips that fit you.</p>
+      </div>
+      <div class="hero-card">
+        <div class="pill">What happens next?</div>
+        <p class="muted">Submit the form and you’ll see a confirmation message right away. We keep responses simple and private.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Goal form</h2>
+      <div class="card">
+        <div id="success" class="success">Thanks! Your goals have been recorded.</div>
+        <form id="goal-form">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Type Your Name" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@school.edu" required>
+          </div>
+          <div>
+            <label for="goal">Fitness goal</label>
+            <select id="goal" name="goal" required>
+              <option value="">Select one</option>
+              <option>Lose weight</option>
+              <option>Build muscle</option>
+              <option>Just be active</option>
+            </select>
+          </div>
+          <div>
+            <label for="struggle">What’s your biggest struggle with the gym?</label>
+            <textarea id="struggle" name="struggle" placeholder="Ex: I am not very consistent, or I eat too much McDonald's and it is hard to lose weight (LOL)" required></textarea>
+          </div>
+          <button class="btn" type="submit">Submit fitness goal</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div>STAYFIT | Share what you need, we’ll keep it simple.</div>
+      <div>We never send your info anywhere.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
